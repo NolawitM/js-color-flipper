@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js</title>
+    <style>
+      body {
+        font-size: large;
+        margin: 0;
+      }
+      main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #e6e3e3;
+        color: #000000;
+      }
+      nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        padding: 2px 1rem;
+        position: fixed;
+        top: 0;
+      }
+      .nav-links {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      li {
+        list-style: none;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+      }
+      li:first-child {
+        color: aqua;
+        margin: 0 1rem;
+        padding: 0.5rem 1rem;
+        font-weight: bold;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bold;
+      }
+      a:hover {
+        color: #3498db;
+        transition: color 0.3s ease-in-out;
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #ffffff;
+        padding: 2rem;
+        border-radius: 10px;
+      }
+      .btn {
+        border: 1px solid #3498db;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        font-weight: bold;
+      }
+      .btn:hover {
+        cursor: pointer;
+        font-size: large;
+      }
+    </style>
+  </head>
+
+  <body>
+    <script src="script.js"></script>
+    <nav>
+      <h4>color flipper</h4>
+      <div class="nav-center">
+        <ul class="nav-links">
+          <li>
+            <a href="index.html">simple</a>
+          </li>
+          <li>
+            <a href="hex.html">hex</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <main>
+      <div class="container">
+        <h2>
+          background color :
+          <span class="colors">#ffff</span>
+        </h2>
+        <button class="btn" id="btn">Click me</button>
+      </div>
+    </main>
+  </body>
+</html>
